@@ -1,0 +1,690 @@
+/*INICIO TAMANHO DAS BOX*/
+.str1{
+	background-image: url('../img/us_bg.png');
+	background-size: cover;
+	height: auto;
+	width: auto;
+	background-repeat: no-repeat;
+	
+}
+.str2{
+	background-image: url('../img/th_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.str3{
+	background-image: url('../img/bell_BG.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.str4{
+	background-image: url('../img/poly_BG.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.str5{
+	background-image: url('../img/odonodobodeResize.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+	color: black;
+}
+.str6{
+	background-image: url('../img/pelezinhojampa.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str7{
+	background-image: url('../img/beachusz__BG.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str8{
+	background-image: url('../img/ytapioca_BG.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str9{
+	background-image: url('../img/mawaop_bg.jfif');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+
+.str10{
+	background-image: url('../img/xjohn_BG.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str11{
+	background-image: url('../img/bigano_BG.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str12{
+	background-image: url('../img/nordestina_BG.png');
+	background-size: cover;
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+
+.str13{
+	background-image: url('../img/golDeGoleiro.png');
+	background-size: cover;
+	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+
+.str14{
+	background-image: url('../img/mayarinha007.jpg');
+	background-size: cover;
+	width: auto;	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+
+.str15{
+	background-image: url('../img/sdorita.png');
+	background-size: cover;
+	width: auto;	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+
+.str16{
+	background-image: url('../img/pandinhagamer.png');
+	background-size: cover;
+	width: auto;	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str17{
+	background-image: url('../img/arlindogamesBG.png');
+	background-size: cover;
+	width: auto;	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+/*FIM TAMANHO DAS BOX*/
+.card{
+	border-color: #dd0f0f;
+	border-style: solid;
+	border-width: 2px;
+}
+/*css do scroll do mouse*/
+#navbar {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 10px 10px;
+	transition: 0.4s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	background-image: url('../img/border.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	/*border-bottom: 3px solid #791212;*/
+  }
+  
+
+  #navbar a {
+	float: left;
+	/*color: white;*/
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 25px;
+	border-radius: 4px;
+  }
+  
+  #navbar #logo {
+	font-size: 35px;
+	font-weight: bold;
+	transition: 0.4s;
+  }
+  
+  /*#navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+ */ 
+  #navbar a.active {
+	background-color: dodgerblue;
+	color: white;
+  }
+  
+  #navbar-right {
+	float: right;
+  }
+  
+
+
+.container a{
+	color:white;
+	
+	
+}
+
+.btn-group{
+	background-color: rgb(133, 124, 124);
+}
+
+.rodape a{
+	text-decoration: none;
+}
+
+.btn-group a:hover{
+	background-color:#dd0f0f;
+	/*color:#white;*/
+}
+
+/*streamers*/
+
+#streamers-section{
+	text-align: center;
+	padding-top: 50px;
+
+}
+#streamers-section h2{
+	color: black;
+	margin-bottom:30px;
+}
+#streamers-section h5{
+	color: black;
+	text-align: center;
+	/*text-shadow: 1px 1px 1px black;*/
+}
+
+#streamers-section h3{
+	text-align: left;
+	color: black;
+	margin-left: 155px;
+}
+#streamers-section p{
+	margin-bottom: 50px;
+	
+	/*text-shadow: 1px 1px 1px white;*/
+}
+
+.streamers-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px
+}
+/*configs submenu*/
+.streamers-container ul li{
+	color: white;
+	height: 45px;
+	line-height:1px;
+	text-align: center;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black;
+}
+
+.streamers-container ul li ul li img{
+	width: 30px;
+	height: 30px;
+
+}
+
+.streamers-container2 ul li ul img{
+	width: 30px;
+	height: 30px;
+}
+.streamers-container3 ul li ul img{
+	width: 30px;
+	height: 30px;
+}
+.streamers-container4 ul li ul img{
+	width: 30px;
+	height: 30px;
+}
+#streamers-section li{
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+#streamers-section li a:hover{
+	color:red;
+}
+#streamers-section li a{
+	color: white;
+	
+}
+.streamers-container ul ul{
+	display: none;
+	margin: 0px;
+}
+.streamers-container ul li:hover>ul{
+	display: block;
+}
+.streamers-container ul{
+	list-style: none;
+	margin-top: 2%;
+}
+.streamers-container ul  ul{
+	margin-left: 80px;
+	top: -15px;
+	position: absolute;
+}
+
+
+
+.streamers-container2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px
+}
+/*configs submenu*/
+.streamers-container2 ul li{
+	color: white;
+	height: 45px;
+	line-height:1px;
+	text-align: center;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-shadow: 1px 1px 1px black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#streamers-section2 li{
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+#streamers-section2 li a:hover{
+	color:red;
+}
+#streamers-section2 li a{
+	color: white;
+	
+}
+.streamers-container2 ul ul{
+	display: none;
+	margin: 0px;
+}
+.streamers-container2 ul li:hover>ul{
+	display: block;
+}
+.streamers-container2 ul{
+	list-style: none;
+	margin-top: 2%;
+}
+.streamers-container2 ul  ul{
+	margin-left: 80px;
+	top: -15px;
+	position: absolute;
+}
+
+.streamers-container3{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px
+}
+/*configs submenu*/
+.streamers-container3 ul li{
+	color: white;
+	height: 45px;
+	line-height:1px;
+	text-align: center;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-shadow: 1px 1px 1px black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#streamers-section3 li{
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+#streamers-section3 li a:hover{
+	color:red;
+}
+#streamers-section3 li a{
+	color: white;
+	
+}
+.streamers-container3 ul ul{
+	display: none;
+	margin: 0px;
+}
+.streamers-container3 ul li:hover>ul{
+	display: block;
+}
+.streamers-container3 ul{
+	list-style: none;
+	margin-top: 2%;
+}
+.streamers-container3 ul  ul{
+	margin-left: 80px;
+	top: -15px;
+	position: absolute;
+}
+
+.streamers-container4{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px
+}
+/*configs submenu*/
+.streamers-container4 ul li{
+	color: white;
+	height: 45px;
+	line-height:1px;
+	text-align: center;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-shadow: 1px 1px 1px black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#streamers-section4 li{
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+#streamers-section4 li a:hover{
+	color:red;
+}
+#streamers-section4 li a{
+	color: white;
+	
+}
+.streamers-container4 ul ul{
+	display: none;
+	margin: 0px;
+}
+.streamers-container4 ul li:hover>ul{
+	display: block;
+}
+.streamers-container4 ul{
+	list-style: none;
+	margin-top: 2%;
+}
+.streamers-container4 ul  ul{
+	margin-left: 80px;
+	top: -15px;
+	position: absolute;
+}
+
+.streamers-box{
+	flex: 1 1 200px;
+	margin-left: 25px;
+	margin-right: 25px;
+	height: 200px;
+	/*background-color: DimGray;
+	background-size: cover;*/
+	border-radius: 5%;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.streamers-box a{
+	text-decoration: none;
+}
+
+
+
+
+/*configs ulisses
+
+
+.str1{
+	background-image: url('../img/morg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.str1 p{
+	margin-top: 2px;
+	margin-left: 38px;
+}
+
+.str1 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+configs tharuxbr
+.str2{
+	background-image: url('../img/Twitch.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.str2 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str2 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs bellzitatv
+.str3{
+	background-image: url('../img/bellBG.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.str3 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+.str3 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs polystation1
+.str4{
+	background-image: url('../img/polyBG.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.str4 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str4 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs paraibah_gamer
+.str5{
+	background-image: url('../img/csgo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.str5 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str5 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs alasanhaa
+.str6{
+	background-image: url('../img/alasanhaabg.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+
+.str6 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str6 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs beachusz
+.str7{
+	background-image: url('../img/');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.str7 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str7 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs ytapioca
+.str8{
+	background-image: url('../img/');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.str8 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str8 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs mawaop
+.str9{
+	background-image: url('../img/mawaopbg.png');
+	background-size: 250px;
+	background-color:  MediumPurple;
+	background-repeat: no-repeat;
+}
+
+
+.str9 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str9 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs xjohnbr
+.str10{
+	background-image: url('../img/bloodborne.jpg');
+	background-size: 250px 250px;
+	background-repeat: no-repeat;
+}
+
+
+.str10 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str10 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs bigano
+.str11{
+	background-image: url('../img/');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.str11 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str11 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+configs nordestina
+.str12{
+	background-image: url('../img/frifasjpg.jpg');
+	background-size: 250px 250px;
+	background-repeat: no-repeat;
+}
+
+
+.str12 img{
+	border-radius: 50px;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.str12 p{
+	margin-top: 2px;
+	margin-left: 32px;
+}
+*/
+/////////////////////////////////////
+
+/* responsivo prosivosrio */
+/*streamers*/
+@media(max-width: 450px){

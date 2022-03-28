@@ -1,0 +1,103 @@
+/*banner*/
+#main-banner{
+	height: auto;
+	background-image: url();
+	background-size: cover;
+	padding-top: 4vh;
+
+}
+
+#banner-info{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: black;
+	padding: 50px;
+}
+
+
+#banner-info p{
+	font-size: 18px;
+	text-align: left;
+}
+
+#banner-info img{
+	height: 120px;
+	
+}
+
+#myCarousel{
+	padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+/* css responsivo provisorio */
+@media(max-width: 450px){
+
+#main-banner{
+		height: auto;
+		width: auto;
+		padding-top: 5vh;
+		padding-bottom: 10vh;
+	}
+
+	#banner-info{
+		width: 60%;
+	}
+
+	#banner-info p{
+		margin:50px;
+		width: auto;
+	}
+
+	#banner-info{
+			padding: 2rem;
+			height: auto;
+			padding-bottom: 50px;
+		}
+
+	#banner-info{
+		width: auto;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		color: black;
+		padding: 10px;
+	}
+
+
+	#banner-info p{
+		font-size: 16px;
+		text-align: center;
+	}
+
+.carousel-caption h1{
+    font-size: 25px;
+}
+.carousel-caption p{
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 580px) {
+	#navbar {
+	  padding: 20px 10px !important;
+	}
+	#navbar a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	#navbar-right {
+	  float: none;
+	}
+
+  }

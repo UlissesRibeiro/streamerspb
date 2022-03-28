@@ -1,0 +1,63 @@
+   /*streamers*/
+	#streamers-section h2, #streamers-section p{
+		width: 85%;
+		margin-left:auto;
+		margin-right: auto;
+	}
+
+	.streamers-container{
+		max-width: 300px;
+		flex-direction: column;
+		margin-bottom: 1;
+	}
+
+	.str2{
+		background-size: 450px;
+	}
+
+	.streamers-container2{
+		flex-direction: column;
+		margin-bottom: 1;
+		
+		justify-content: space-around;
+		max-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.streamers-container3{
+		flex-direction: column;
+		margin-bottom: 1;
+		
+		justify-content: space-around;
+		max-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.streamers-container4{
+		flex-direction: column;
+		margin-bottom: 1;
+		
+		justify-content: space-around;
+		max-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.streamers-box{
+		margin-bottom: 2rem;
+		flex: 1 1 250px;
+	}
+
+	.detail{
+		margin-top: 10px;
+		display: block;
+	}
+
+	.jog1 img{
+	margin-top: 43px;
+	margin-left: 310px;
+	height: 25px;
+	}
+}

@@ -1,0 +1,17 @@
+#team{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#ulisses{
+    border-radius: 50%;
+    width: 60%;
+    /*border-style: solid;
+    border-color: red;*/
+}
+
+#About{
+    font-size: 16px;
+    
+    text-align: left;
+}
