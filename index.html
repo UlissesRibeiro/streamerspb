@@ -22,9 +22,7 @@
         <!-- css do projeto-->
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/streamers.css">
-        <!-- scripts em JS -->
-        <script src="/js/darkmode.js"></script>
-        <script src="/js/locastorage.js"></script>
+
     </head>
 <body id="darkmodeBody" onload="myFunction()">
     <!--INICIO NAVBAR-->
@@ -59,33 +57,7 @@
               
               
 
-                <!-- scrpit de animação do scroll do mouse -->              
-                <script>
-                // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-                window.onscroll = function() {scrollFunction()};
 
-                function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("navbar").style.padding = "10px 10px";
-                document.getElementById("logo").style.fontSize = "15px";
-                } else {
-                document.getElementById("navbar").style.padding = "20px 10px";
-                document.getElementById("logo").style.fontSize = "25px";
-                }
-                }
-                </script>
-
-                <!-- script de localstorage -->              
-                <script>
-                //função do localstorage
-                function save() {	
-                  var checkbox = document.getElementById("darkmodeCheck");
-                  localStorage.setItem("darkmodeCheck", checkbox.checked);	
-                }
-                //carregar o localstorage
-                var checked = JSON.parse(localStorage.getItem("darkmodeCheck"));
-                    document.getElementById("darkmodeCheck").checked = checked;    
-                </script>
         
           </div>
         </div>
@@ -603,7 +575,7 @@
             <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
               <img src="img/banner1.png" alt="streamerspb" style="border-radius: 50%;width: 150px;">
             </a>
-            <p>&copy;<a href="https://ulissesribeiro.vercel.app/" target="_blank" id="linkDev" style="color: black;">UlissesRibeiro</a></p>
+            <p>&copy;<a href="#" target="_blank" id="linkDev" style="color: black;">StreamersPB | 2021 - 2022</a></p>
               <ul class="list-unstyled d-flex">
                 <!--<li class="ms-3"><a class="text-muted" href="https://twitter.com/ulissestark"><i class="bi bi-twitter"></i></a></li>-->
                 <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/streamerspb/"><i class="bi bi-instagram"></i></a>
@@ -637,5 +609,37 @@
       </div>
       </section>
     <!-- Final rodapé-->
+
+    <!-- scripts em JS -->
+    <script src="/js/darkmode.js"></script>
+    <script src="/js/locastorage.js"></script>
+
+                    <!-- scrpit de animação do scroll do mouse -->              
+                    <script>
+                      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+                      window.onscroll = function() {scrollFunction()};
+      
+                      function scrollFunction() {
+                      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                      document.getElementById("navbar").style.padding = "10px 10px";
+                      document.getElementById("logo").style.fontSize = "15px";
+                      } else {
+                      document.getElementById("navbar").style.padding = "20px 10px";
+                      document.getElementById("logo").style.fontSize = "25px";
+                      }
+                      }
+                      </script>
+      
+                      <!-- script de localstorage -->              
+                      <script>
+                      //função do localstorage
+                      function save() {	
+                        var checkbox = document.getElementById("darkmodeCheck");
+                        localStorage.setItem("darkmodeCheck", checkbox.checked);	
+                      }
+                      //carregar o localstorage
+                      var checked = JSON.parse(localStorage.getItem("darkmodeCheck"));
+                          document.getElementById("darkmodeCheck").checked = checked;    
+                      </script>
 </body>
 </html>
