@@ -1,6 +1,6 @@
 /*INICIO TAMANHO DAS BOX*/
 .str1{
-	background-image: url('../img/us_bg.png');
+	background-image: url('../img/us_bg.webp');
 	background-size: cover;
 	height: auto;
 	width: auto;
@@ -8,73 +8,73 @@
 	
 }
 .str2{
-	background-image: url('../img/th_bg.png');
+	background-image: url('../img/th_bg.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .str3{
-	background-image: url('../img/bell_BG.png');
+	background-image: url('../img/bell_BG.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .str4{
-	background-image: url('../img/poly_BG.png');
+	background-image: url('../img/poly_BG.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .str5{
-	background-image: url('../img/paraibahfps.jpg');
+	background-image: url('../img/paraibahfps.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 	color: black;
 }
 .str6{
-	background-image: url('../img/pelezinhojampa.png');
+	background-image: url('../img/pelezinhojampa.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str7{
-	background-image: url('../img/beachusz__BG.png');
+	background-image: url('../img/beachusz.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str8{
-	background-image: url('../img/ytapioca_BG.png');
+	background-image: url('../img/ytapioca_BG.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str9{
-	background-image: url('../img/mawaop_bg.jfif');
+	background-image: url('../img/mayuuop.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 
 .str10{
-	background-image: url('../img/xjohn_BG.png');
+	background-image: url('../img/xjohn_BG.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str11{
-	background-image: url('../img/bigano_BG.png');
+	background-image: url('../img/bigano_BG.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str12{
-	background-image: url('../img/nordestina_BG.png');
+	background-image: url('../img/nordestina_BG.webp');
 	background-size: cover;
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 
 .str13{
-	background-image: url('../img/golDeGoleiro.png');
+	background-image: url('../img/golDeGoleiro.webp');
 	background-size: cover;
 	
 	background-color:  black;
@@ -82,7 +82,7 @@
 }
 
 .str14{
-	background-image: url('../img/mayarinha007.jpg');
+	background-image: url('../img/mayarinha007.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
@@ -90,7 +90,7 @@
 }
 
 .str15{
-	background-image: url('../img/sdorita.png');
+	background-image: url('../img/sdorita.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
@@ -98,21 +98,21 @@
 }
 
 .str16{
-	background-image: url('../img/pandinhagamer.png');
+	background-image: url('../img/pandinhagamer.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str17{
-	background-image: url('../img/arlindogamesBG.png');
+	background-image: url('../img/arlindogamesBG.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str18{
-	background-image: url('../img/');
+	background-image: url('../img/corynganoob.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
@@ -120,35 +120,49 @@
 }
 
 .str19{
-	background-image: url('../img/duttyfps.png');
+	background-image: url('../img/duttyfps.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str20{
-	background-image: url('../img/fofaotv.png');
+	background-image: url('../img/fofaotv.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str21{
-	background-image: url('../img/');
+	background-image: url('../img/lenan01.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str22{
-	background-image: url('../img/');
+	background-image: url('../img/rgamespb.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
 	background-repeat: no-repeat;
 }
 .str23{
-	background-image: url('../img/tiobarbudo.jpeg');
+	background-image: url('../img/tiobarbudo.webp');
+	background-size: cover;
+	width: auto;	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str24{
+	background-image: url('../img/paraibaxp.webp');
+	background-size: cover;
+	width: auto;	
+	background-color:  black;
+	background-repeat: no-repeat;
+}
+.str25{
+	background-image: url('../img/eusouellen.webp');
 	background-size: cover;
 	width: auto;	
 	background-color:  black;
@@ -170,7 +184,7 @@
 	width: 100%;
 	top: 0;
 	z-index: 99;
-	background-image: url('../img/border.png');
+	background-image: url('../img/border.webp');
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 100%;
@@ -513,7 +527,7 @@
 
 
 .str1{
-	background-image: url('../img/morg.jpg');
+	background-image: url('../img/morg.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 	
@@ -532,7 +546,7 @@
 
 configs tharuxbr
 .str2{
-	background-image: url('../img/Twitch.jpg');
+	background-image: url('../img/Twitch.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -549,7 +563,7 @@ configs tharuxbr
 }
 configs bellzitatv
 .str3{
-	background-image: url('../img/bellBG.png');
+	background-image: url('../img/bellBG.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -564,7 +578,7 @@ configs bellzitatv
 }
 configs polystation1
 .str4{
-	background-image: url('../img/polyBG.png');
+	background-image: url('../img/polyBG.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -582,7 +596,7 @@ configs polystation1
 }
 configs paraibah_gamer
 .str5{
-	background-image: url('../img/csgo.png');
+	background-image: url('../img/csgo.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -600,7 +614,7 @@ configs paraibah_gamer
 }
 configs alasanhaa
 .str6{
-	background-image: url('../img/alasanhaabg.png');
+	background-image: url('../img/alasanhaabg.webp');
 	background-size: auto;
 	background-repeat: no-repeat;
 }
@@ -654,7 +668,7 @@ configs ytapioca
 }
 configs mawaop
 .str9{
-	background-image: url('../img/mawaopbg.png');
+	background-image: url('../img/mawaopbg.webp');
 	background-size: 250px;
 	background-color:  MediumPurple;
 	background-repeat: no-repeat;
@@ -673,7 +687,7 @@ configs mawaop
 }
 configs xjohnbr
 .str10{
-	background-image: url('../img/bloodborne.jpg');
+	background-image: url('../img/bloodborne.webp');
 	background-size: 250px 250px;
 	background-repeat: no-repeat;
 }
@@ -709,7 +723,7 @@ configs bigano
 }
 configs nordestina
 .str12{
-	background-image: url('../img/frifasjpg.jpg');
+	background-image: url('../img/frifaswebp.webp');
 	background-size: 250px 250px;
 	background-repeat: no-repeat;
 }
