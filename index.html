@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projeto onde divulgamos nossos streamers e criadores de conteudo da Paraiba!">
         
         <!-- CSS BootStrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -20,660 +21,124 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
         <!-- css do projeto-->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/streamers.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="/css/streamers.css">
 
     </head>
-<body id="darkmodeBody" onload="myFunction()">
-    <!--INICIO NAVBAR-->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
-        <a class="navbar-brand" href="#">
-          <img src="img/banner2.png" alt="Logo" style="width: 150px;">
-        </a>
-        <div class="container-fluid">
-          <!--<a class="navbar-brand" href="#" id="logo">StreamersPB</a>-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
-                <a class="nav-link" href="#streamers-section">Streamers</a>
-              </li>
-              <li class="nav-item">
-                <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
-                <a class="nav-link" href="team.html">Equipe</a>
-              </li>
-              <li class="nav-item">
-                <label type="button" onClick="save()" style="padding-top: 13px;color: white;">
-                  Tema escuro <input type="checkbox" id="darkmodeCheck" onclick="myFunction()">
-                </label>  
-              </li>
-
-              
-              
-
-
-        
-          </div>
+  <body id="theme">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="img/banner2.webp" alt="Logo" style="width: 150px;">
+      </a>
+      <div class="container-fluid">
+        <!--<a class="navbar-brand" href="#" id="logo">StreamersPB</a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
+              <a class="nav-link" href="streamers.html">Streamers</a>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
+              <a class="nav-link" href="team.html">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
+              <a class="nav-link" href="parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <button id="toggle-btn" class="dark-mode-toggle btn"><i class="bi bi-brightness-high"></i></button>
+            </li>
         </div>
-      </nav>
-     
+      </div>
+    </nav>
+
+<section id="main" class="container justify-content-center d-flex">
+  <div class="video-wrapper">
+    <video playsinline autoplay muted loop poster="">
+      <source src="/media/vayne_homes.mp4" type="video/mp4">
       
-      <!--FIM NAVBAR-->
-      <main>
-		<!-- banner inicio -->
-		<div id="main-banner">
-    <!--INICIO CARROSEL-->
-      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <!--<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <!--INICIO FILL GRADIENTE-->
-                <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:black;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f00000;stop-opacity:1" />
-                </linearGradient>
-              </defs><rect width="100%" height="100%" fill="url(#grad1)"/>
-              <!--FIM FILL GRADIENTE-->
-            </svg>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Quem somos!</h1>
-                <p>Conheça um pouco mais desse projeto!</p>
-                <p><a class="btn btn-lg btn-primary" href="#sobre">Saiba mais</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="350px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <!--INICIO FILL GRADIENTE-->
-                <defs>
-                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:black;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f00000;stop-opacity:1" />
-                </linearGradient>
-              </defs><rect width="100%" height="100%" fill="url(#grad2)"/>
-            <!--FIM FILL GRADIENTE-->
-            </svg>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Conheça nosso streamers, nosso orgulho!</h1>
-                <p>Se dê uma oportunidade de conhecer os streamers e criadores de conteúdo aqui da Paraiba!</p>
-                <!--<p><a class="btn btn-lg btn-primary" href="#streamers-section">Chega mais!</a></p>-->
-              </div>
-            </div>
-          </div>
-          <!--<div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="300px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <!--INICIO FILL GRADIENTE--
-                <defs>
-                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:black;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f00000;stop-opacity:1" />
-                </linearGradient>
-              </defs><rect width="100%" height="100%" fill="url(#grad3)"/>
-            <!--FIM FILL GRADIENTE--
-            </svg>
-    
-            <!--<div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Faça parte do nosso projeto</h1>
-                <p>Entre em contato conosco e seu perfil será adicionado aqui!</p>
-                <p><a class="btn btn-lg btn-primary" href="contato.html">Contato</a></p>
-              </div>
-            </div>--
-          </div>-->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-<!--FIM CARROSEL-->
-
-<!-- SECTION STREAMERS INICIO -->
-<section id="streamers-section">
-  <!--teste galeria streamers-->
-  <main>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto"  id="darkmodeH1">
-        <h1 class="fw-light">Conheça nossos streamers</h1>
-        <p>Somos únicos no que fazemos!</p>
-        <!--<p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>-->
-      </div>
-      </div>
-    </section>
-    
-    <div class="album py-5">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2">
-          <div class="col">
-          <div class="card shadow-sm str17">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/residentEvil.png" width="40%" alt="resident evil">
-              </span>
-          <a href="https://www.twitch.tv/arlindogamesoficial" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/arlindogames/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://twitter.com/ArlindoGames82/" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>  
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str7">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="league of legends">
-              <img src="/img/halo.png" width="35%" alt="halo infinite"></span>
-          <a href="https://trovo.live/Beachu" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Trovo</a>
-          <a href="https://www.twitch.tv/beachusz" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/beachusz" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/beachusz_" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str3">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/apex.png" width="35%" alt="apex legends">
-              <img src="/img/lost-ark-map-og.png" width="35%" alt="lost ark"></span>
-          <a href="https://www.twitch.tv/bellzitatv" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/bellzita.tv" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/bellzitat" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str11">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="leagu of legends">
-              </span>
-          <a href="https://www.twitch.tv/bigano" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.facebook.com/julio.bigano/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/juliobigano/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <!--<div class="col">
-            <div class="card shadow-sm str18">
-            <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" fill="#55595c" />
-            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-            </svg>		  
-            <div class="card-body dica">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <!--<span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="leagu of legends">
-                </span>--
-            <a href="https://www.twitch.tv/corynganoob" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-            <a href="https://www.instagram.com/corynganoob/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>-->
-            <div class="col">
-              <div class="card shadow-sm str19">
-              <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" fill="#55595c" />
-              <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-              </svg>		  
-              <div class="card-body dica">
-              <p class="card-text"></p>
-              <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <span class="dicatext"><img src="/img/valorant.png" width="35%" alt="valorant">
-                  <img src="/img/csgo-icon.png" width="35%" alt="csgo">
-                  </span>
-              <a href="https://www.twitch.tv/dutyfps" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-              <a href="https://twitter.com/dutyfps" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.instagram.com/dutyfps/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-              </div>
-              </div>
-              </div>
-              </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm str20">
-                <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <rect width="100%" fill="#55595c" />
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-                </svg>		  
-                <div class="card-body dica">
-                <p class="card-text"></p>
-                <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <span class="dicatext"><img src="/img/valorant.png" width="35%" alt="valorant">
-                    <img src="/img/csgo-icon.png" width="35%" alt="csgo">
-                    </span>
-                <a href="https://www.twitch.tv/fofao_tv" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-                <a href="https://www.youtube.com/channel/UCBncQWxkxMwQP7HScnaJVIA" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-youtube"></i></a>
-                <a href="https://www.instagram.com/fofao.tv/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-          <div class="col">
-          <div class="card shadow-sm str13">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/fifa.png" width="35%" alt="fifa 2021"></span>
-          <a href="https://www.youtube.com/channel/UCxi68JQ6hhqbDhKfYJLcGFQ/videos" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">
-          <i class="bi bi-youtube"></i>
-          </a>
-          <a href="https://www.instagam.com/wagner.historiador/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <!--<div class="col">
-            <div class="card shadow-sm str21">
-            <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" fill="#55595c" />
-            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-            </svg>		  
-            <div class="card-body dica">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <!--<span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="leagu of legends">
-                </span>--
-            <a href="https://www.twitch.tv/lenan_01" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-            <a href="https://www.instagram.com/lenan01_/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>-->
-          <div class="col">
-          <div class="card shadow-sm str9">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="league of legends">
-              <img src="/img/gtarp.jpg" width="30%" alt="gta rp"></span>
-          <a href="https://www.twitch.tv/mawaop" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/mawaop/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/opmawa" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str14">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/retro.png" width="40%" alt="retro game"></span>
-          <a href="https://twitch.tv/mayarinha007" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/mayarinha007" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str12">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/freefire.png" width="35%" alt="free fire"></span>
-          <a href="https://www.twitch.tv/nordestina_gamer" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/daycamurca.p" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str5">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em" id="corDoBode"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/csgo-icon.png" width="35%" alt="cs go">
-             <img src="/img/pubg.png" width="35%" alt="pubg"></span>
-          <a href="https://www.twitch.tv/paraibahfps" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/paraibahfps" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/paraibahfps" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str16">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/valorant.png" width="35%" alt="valorant">
-              <img src="/img/freefire.png" width="35%" alt="freefire"></span>
-          <a href="https://www.twitch.tv/pandinhagameer" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/pandinhagameer_/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://twitter.com/pandinhagamerr/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>  
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str6">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/freefire.png" width="35%" alt="freefire">
-              </span>
-          <a href="https://www.youtube.com/channel/UC8wjH0s0nV1uGCJtbIed0jg" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-youtube"></i></a>
-          <a href="https://booyah.live/studio/12540770" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Booyah</a>
-          <a href="https://www.instagram.com/pelezinhojampa" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str4">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/fortnite.png" width="35%" alt="fortnite">
-              <img src="/img/cod_warzone.png" width="35%" alt="call of duty warzone"></span>
-          <a href="https://www.twitch.tv/polystation1" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/freirepolyanna" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/polystation1" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <!--<div class="col">
-            <div class="card shadow-sm str22">
-            <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" fill="#55595c" />
-            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-            </svg>		  
-            <div class="card-body dica">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <!--<span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="leagu of legends">
-                </span>--
-            <a href="https://www.twitch.tv/rg_gamespb" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-            <a href="https://www.youtube.com/channel/UCpydOLsuenBc5LNzpE_oOVw" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.instagram.com/rg_gamespb/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>-->
-          <div class="col">
-          <div class="card shadow-sm str15">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/valorant.png" width="35%" alt="valorant">
-             </span>
-          <a href="https://www.twitch.tv/sdorita" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/dorithayse/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://twitter.com/Dorithayse" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>  
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str2">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/fortnite.png" width="35%" alt="fortnite">
-              <img src="/img/lol_logo.png" width="35%" alt="League of Legends"></span>
-          <a href="https://www.twitch.tv/tharuxbr" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/tharuxbr" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/tharuxbr" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm str23">
-            <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" fill="#55595c" />
-            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-            </svg>		  
-            <div class="card-body dica">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <span class="dicatext"><img src="/img/cod_warzone.png" width="35%" alt="call of duty">
-                <img src="/img/fortnite.png" width="35%" alt="fortnite">
-                </span>
-            <a href="https://www.twitch.tv/tio_barbudo" target="_blank"  role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-            <a href="https://www.instagram.com/tio_barbudo/" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-          <div class="col ">
-          <div class="card shadow-sm str1">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>
-          <div class="card-body dica" >
-          <p class="card-text">          
-          </p>
-          <div class="d-flex justify-content-between align-items-center">
-            
-          <div class="btn-group ">
-
-              <span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="league of Legends"><img src="/img/ds.png" width="35%" alt="dark souls" ></span> 
-
-          <a href="https://www.twitch.tv/ulissesstark" target="_blank" id="twitch" role="button" class="btn btn-sm btn-outline-secondary">
-          <i class="bi bi-twitch"></i>
-          </a>
-          <a href="https://www.instagram.com/ulisses.stark" target="_blank" id="instagram" role="button" class="btn btn-sm btn-outline-secondary">
-          <i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/ulissestark" target="_blank" id="twitter" role="button" class="btn btn-sm btn-outline-secondary">
-          <i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str10">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/ds.png" width="35%" alt="dark souls"></span>
-          <a href="https://www.twitch.tv/xjohnbr" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/johnm.sp" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm str8">
-          <svg class="bd-placeholder-img card-img-top"  height="30px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
-          </svg>		  
-          <div class="card-body dica">
-          <p class="card-text"></p>
-          <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <span class="dicatext"><img src="/img/lol_logo.png" width="35%" alt="league of legends">
-              <img src="/img/valorant.png" width="35%" alt="valorant">
-                </span>
-          <a href="https://www.twitch.tv/ytapioca" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitch"></i></a>
-          <a href="https://www.instagram.com/may_tapioca" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/ytapioca" target="_blank" role="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-twitter"></i></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
- 
-      <!--<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2">
-        
-
-        </div>-->
-      </div>
+    </video>
+  
+    <div class="header">
+      <!--<h1>Blueberry Cheesecake</h1>-->
+      <img src="/img/banner2.webp" width="50%" alt="">
+      <!--<button>Recipe here</button>-->
+      <a href="https://instagram.com/streamerspb" class="btn"  style="color:aliceblue;position: relative;top: 200px;left: 200px;">
+        <img src="/img/instagram_logo.webp"  width="6%" id="logo_inst_vd" alt="" srcset="">
+      </a>
+      <!--<a href="https://instagram.com/streamerspb"  class="btn" style="color:aliceblue;position: relative;top:70px;left: 590px;">
+        <img src="/img/twitch.png" width="6.5%" alt="" srcset="">
+      </a>-->
     </div>
+    
   </div>
-</main>
 </section>
-<!-- SECTION STREAMERS FIM -->
 
-<!-- About Section-->
-<section class="page-section text-white mb-0" style="background-image: url('img/fundo.jpeg');background-image: linear-gradient(to right,#2e201b, rgb(255, 0, 0));   background-size: cover;"id="sobre">
-  <!--<img class="d-block mx-auto mb-4" src="img/avatar.jpeg" alt="" width="300" height="300" style="border-radius: 50%; padding-top: 10px;">-->
+      <!-- Seção sobre inicio -->
+  <section  id="about" >
+    
+    <div class="container">
+      <!-- About Section Heading-->
+        <!--<h2 class="page-section-heading text-center text-uppercase">CONHEÇA NOSSOS STREAMERS</h2>-->
+      <!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+      </div>
+      <!-- About Section Content-->
+      <div class="row">
+          <div class="col-lg-4 me-auto"><p class="lead" style="font-size: 18px;text-align: left;">StreamersPB, um projeto voltado para divulgar os streamers
+          do estado da Paraiba. Conheça um pouco mais sobre nosso projeto na sessão sobre e também os streamers!</p>
+          </div>
+          <div class="col-lg-6 ms-auto">
+            <!--<p class="lead" style="font-size: 18px;text-align: left;">Já pensou em fazer lives mas ainda não tem equipamento apropriado?
+            Faça uma vista a Arena Jogue Facil, e aproveite as salas de stream, 2 salas, preparadas para transmissões de PC e console, ambas com alta qualidade em vídeo, iluminação e som!</p>
+            <!--<img class="d-block mx-auto mb-4" src="/img/banner2.webp" alt="" width="80%" height="70%" style="padding-top: 10px;"> -->
+          </div>
+          <a href="/streamers.html" class="btn " id="btnStreamers" style="width: ;background-color: darkred;color: white;">Conheça nossos <span style="text-transform:uppercase;font-weight: bold;">streamers</span></a>
+      </div>
+  </div>
+</section>
+
+<section id="divulga_arena" style="margin-top: 150px;">
   <div class="container">
-    <div class="px-4 py-5 my-5 text-center">
-      <!--<img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
-      <h1 class="display-5 fw-bold">Sobre o projeto</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">O Projeto StreamersPB, surgiu da necessidade de encontrar streamers aqui da região, uma vez que não temos as mesmas oportunidades de conseguirmos parcerias com marcas para nos divulgarmos! O Streamers PB, é um projeto idealizado por mim(Ulisses Gomes), cujo maior propósito é divulgar os streamers e criadores de conteúdo aqui do estado da Paraíba.<br>
-          A ideia do projeto, surgiu no momento que percebi que marcas e sites, não tem o real interesse em divulgar streamers e criadores de conteudo com um público pequeno, pois o que importa seria apenas números. Aqui não trabalhamos com números, nosso unico intuito é ser um local onde podemos encontrar pessoas do nosso estado.<br>
-          
-        </p>
-        <!--<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <a href="contato.html" role="button" class="btn btn-primary btn-lg px-4 gap-3">Contato</a>	
-        </div>-->
-      </div>
-      </div>
-  </div>
+    <!-- About Section Heading-->
+      <!--<h2 class="page-section-heading text-center text-uppercase">CONHEÇA NOSSOS STREAMERS</h2>-->
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+    </div>
+    <!-- About Section Content-->
+    <!--<div class="row">
+        <div class="col-lg-4 me-auto">
+         <a href="https://arenajoguefacil.com.br/">
+          <img class="d-block mx-auto mb-4" src="/img/arena_logo.webp" alt="" width="100%" height="100%" style="padding-top:;">
+         </a>  <!--<p class="lead" style="font-size: 18px;text-align: left;">StreamersPB, um projeto voltado para divulgar os streamers
+        do estado da Paraiba. Conheça um pouco mais sobre nosso projeto na sessão sobre e também os streamers!</p>--
+        </div>
+        <div class="col-lg-6 ms-auto">
+          <p class="lead" style="font-size: 18px;text-align: left;">Já pensou em fazer lives mas ainda não tem equipamento apropriado?
+          Faça uma vista a Arena Jogue Facil, e aproveite as salas de stream, 2 salas, preparadas para transmissões de PC e console, ambas com alta qualidade em vídeo, iluminação e som!</p>
+          --<img class="d-block mx-auto mb-4" src="/img/banner2.webp" alt="" width="80%" height="70%" style="padding-top: 10px;"> --
+        </div>
+        --<button class="btn " style="width: 20%;background-color: darkred;color: white;">Conheça nossos <span style="text-transform:uppercase;font-weight: bold;">streamers</span></button>--
+    </div>-->
+</div>
 </section>
-<!-- About section end -->
 
-			<!--<div id="banner-info">
-				<img src="#" alt="streamers joão pessoa">
-				<p class="lead mb-4 offset-md-3">Conheça mais sobre nosso projeto e nossos streamers! </p>
-			</div>-->
-		</div>
-		<!-- banner fim -->
-        
-	</main>
     <!-- Inicio rodapé -->
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <section>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
           <title>Bootstrap</title>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
@@ -688,78 +153,27 @@
           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
         </symbol>
       </svg>
-      <section id="darkmodeRodape">
-       <div class="container rodape" >
-        <footer class="row row-cols-5 py-5 my-5">
-          <div class="col">
-            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img src="img/banner1.png" alt="streamerspb" style="border-radius: 50%;width: 150px;">
-            </a>
-            <p>&copy;<a href="#" target="_blank" id="linkDev" style="color: black;">StreamersPB | 2021 - 2022</a></p>
-              <ul class="list-unstyled d-flex">
-                <!--<li class="ms-3"><a class="text-muted" href="https://twitter.com/ulissestark"><i class="bi bi-twitter"></i></a></li>-->
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/streamerspb/"><i class="bi bi-instagram"></i></a>
-                </li>
-              </ul>
-          </div>
-          <!-- espaçamento -->
-          <div class="col">
-       
-          </div>
-          <div class="col">
 
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <!--<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>-->
+            <span class="mb-3 mb-md-0 ">&copy; 2022 StreamersPB</span>
           </div>
-        
-          <!-- fim espaçamento-->
-        
-          <div class="col">
-            <h5 style="text-align: center;">Conheça</h5>
-            <ul class="nav flex-column"  >
-              <li class="nav-item"><a id="linkImundo" href="https://ulissesribeiro.github.io/imundos" target="_blank" style="color: black;" class="nav-link p-0">
-               Imundos</a></li>
-              <li class="nav-item"><a id="linkEbz" href="https://ulissesribeiro.github.io/ebz_lol" target="_blank" style="color: black;" class="nav-link p-0">
-                Eternos Bronze</a></li>
-            </ul>
-          </div>
-          <div class="col">
-         
-          </div>
-        
+      
+          <!--<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <!-<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>-->
+            <!--<li class="ms-3"><a class="text-muted" href="https://instagram.com/streamerspb"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>--
+            <!-<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>--
+          </ul>-->
         </footer>
       </div>
-      </section>
-    <!-- Final rodapé-->
 
-    <!-- scripts em JS -->
-    <script src="/js/darkmode.js"></script>
-    <script src="/js/locastorage.js"></script>
+    </section>
+  <!-- Final rodapé-->
 
-                    <!-- scrpit de animação do scroll do mouse -->              
-                    <script>
-                      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-                      window.onscroll = function() {scrollFunction()};
-      
-                      function scrollFunction() {
-                      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                      document.getElementById("navbar").style.padding = "10px 10px";
-                      document.getElementById("logo").style.fontSize = "15px";
-                      } else {
-                      document.getElementById("navbar").style.padding = "20px 10px";
-                      document.getElementById("logo").style.fontSize = "25px";
-                      }
-                      }
-                      </script>
-      
-                      <!-- script de localstorage -->              
-                      <script>
-                      //função do localstorage
-                      function save() {	
-                        var checkbox = document.getElementById("darkmodeCheck");
-                        localStorage.setItem("darkmodeCheck", checkbox.checked);	
-                      }
-                      //carregar o localstorage
-                      var checked = JSON.parse(localStorage.getItem("darkmodeCheck"));
-                          document.getElementById("darkmodeCheck").checked = checked;    
-                      </script>
-</body>
+  </body>
+  <script src="/js/darkStorage.js"></script>
 </html>

@@ -87,7 +87,9 @@
 		padding-top: 5vh;
 		padding-bottom: 10vh;
 	}
-
+#darkmodeH1{
+	padding-top: 100px;
+}
 	#banner-info{
 		width: 60%;
 	}
@@ -130,6 +132,9 @@
 @media screen and (max-width: 580px) {
 	#navbar {
 	  padding: 20px 10px !important;
+	}
+	#darkmodeH1{
+		padding-top: 100px;
 	}
 	#navbar a {
 	  float: none;
