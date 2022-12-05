@@ -24,6 +24,9 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="/css/streamers.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     </head>
   <body id="theme">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
@@ -37,13 +40,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
+            </li>-->
+            <li class="nav-item dropdown">
               <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
-              <a class="nav-link" href="streamers.html">Streamers</a>
+              <a class="nav-link dropbtn" href="#">Streamers</a>
+              <div class="dropdown-content">
+                <a href="https://www.twitch.tv/beachusz" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> beachusz</a>
+                <a href="https://www.twitch.tv/bellzitatv" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> bellzitatv</a>
+                <a href="https://www.twitch.tv/corynganoob" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> corynganoob</a>
+                <a href="https://www.twitch.tv/dutyfps" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> dutyfps</a>
+                <a href="https://www.twitch.tv/eusouellen" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> eusouellen</a>
+                <a href="https://www.twitch.tv/fofaottv" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> fofaottv</a>
+                <a href="https://www.twitch.tv/paraibahfps" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> paraibahfps</a>
+                <a href="https://www.twitch.tv/pandinhagameer" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> pandinhagameer</a>
+                <a href="https://www.twitch.tv/polystation1" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> polystation1</a>
+                <a href="https://www.twitch.tv/rg_gamespb" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> rg_gamespb</a>
+                <a href="https://www.twitch.tv/tharuxbr" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> tharuxbr</a>
+                <a href="https://www.twitch.tv/ytapioca" target="_blank"><i class="bi bi-twitch" style="font-size: 15px;"></i> ytapioca</a>
+              </div>
             </li>
+            
             <li class="nav-item">
               <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
               <a class="nav-link" href="team.html">Equipe</a>
@@ -52,11 +70,15 @@
               <!--<a class="nav-link" href="streamers.html">Streamers</a>-->
               <a class="nav-link" href="parceiros.html">Parceiros</a>
             </li>
+
+            
             <li class="nav-item">
               <button id="toggle-btn" class="dark-mode-toggle btn"><i class="bi bi-brightness-high"></i></button>
             </li>
         </div>
+        
       </div>
+
     </nav>
 
 <section id="main" class="container justify-content-center d-flex">
@@ -71,7 +93,7 @@
       <img src="/img/banner2.webp" width="50%" alt="">
       <!--<button>Recipe here</button>-->
       <a href="https://instagram.com/streamerspb" class="btn"  style="color:aliceblue;position: relative;top: 200px;left: 200px;">
-        <img src="/img/instagram_logo.webp"  width="6%" id="logo_inst_vd" alt="" srcset="">
+        <i class="bi bi-instagram" style="font-size: 30px;"></i> 
       </a>
       <!--<a href="https://instagram.com/streamerspb"  class="btn" style="color:aliceblue;position: relative;top:70px;left: 590px;">
         <img src="/img/twitch.png" width="6.5%" alt="" srcset="">
@@ -96,15 +118,16 @@
       <!-- About Section Content-->
       <div class="row">
           <div class="col-lg-4 me-auto"><p class="lead" style="font-size: 18px;text-align: left;">StreamersPB, um projeto voltado para divulgar os streamers
-          do estado da Paraiba. Conheça um pouco mais sobre nosso projeto na sessão sobre e também os streamers!</p>
+          do estado da Paraiba.</p>
           </div>
           <div class="col-lg-6 ms-auto">
             <!--<p class="lead" style="font-size: 18px;text-align: left;">Já pensou em fazer lives mas ainda não tem equipamento apropriado?
             Faça uma vista a Arena Jogue Facil, e aproveite as salas de stream, 2 salas, preparadas para transmissões de PC e console, ambas com alta qualidade em vídeo, iluminação e som!</p>
             <!--<img class="d-block mx-auto mb-4" src="/img/banner2.webp" alt="" width="80%" height="70%" style="padding-top: 10px;"> -->
           </div>
-          <a href="/streamers.html" class="btn " id="btnStreamers" style="width: ;background-color: darkred;color: white;">Conheça nossos <span style="text-transform:uppercase;font-weight: bold;">streamers</span></a>
+          <!--<a href="/streamers.html" class="btn " id="btnStreamers" style="width: ;background-color: darkred;color: white;">Conheça nossos <span style="text-transform:uppercase;font-weight: bold;">streamers</span></a>-->
       </div>
+
   </div>
 </section>
 
