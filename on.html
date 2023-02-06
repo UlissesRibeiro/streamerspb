@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitch Streamer Status</title>
+</head>
+<body>
+  <h1>Verificando status do streamer...</h1>
+  <div id="status"></div>
+  
+  <script>
+    const streamer = "ulissesstark";
+    const clientId = "jldkcxxpdmpl5svlpiy1eyukrz20np";
+    
+    const apiUrl = `https://api.twitch.tv/helix/streams?user_login=${streamer}`;
+    
+    fetch(apiUrl, {
+      headers: {
+        "Client-ID": clientId
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        const stream = data.data[0];
+        if (stream) {
+          document.querySelector("#status").innerHTML = `<h2>Streamer está online agora!</h2>`;
+        } else {
+          document.querySelector("#status").innerHTML = `<h2>Streamer está offline no momento.</h2>`;
+        }
+      });
+  </script>
+</body>
+</html>
+
